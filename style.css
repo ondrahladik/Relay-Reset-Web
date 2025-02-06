@@ -1,0 +1,99 @@
+body {
+    font-family: arial;
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    background-color: black;
+    color: #3c87b2;
+}
+
+h1 {
+    color: #3c87b2;
+    padding: 0;
+    margin: 0 !important;
+    font-size: 25px !important;
+}
+
+h2 {
+    color: grey;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+h3 {
+    color: #3c87b2;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.section {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    width: 100%;
+    padding: 15px;
+  }
+
+td {
+    font-size: 30%;
+}
+
+#mqttForm,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mqttForm button, form button {
+    width: 80%;
+    height: 60px;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #3c87b2;
+    border: 2px solid #333;
+    color: black;
+    font-weight: bold;
+}
+
+#mqttForm button:hover,
+form button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+#response {
+    font-size: 18px;
+    color: #3c87b2;
+    margin: 20px 0;
+}
+
+    @media (max-width: 768px) {
+        div.section {
+            width: 90%;
+        }
+        #mqttForm button:hover,
+        form button:hover {
+            background-color: #3c87b2;
+        }
+    }
