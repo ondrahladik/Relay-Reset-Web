@@ -23,6 +23,14 @@ function sendMessage(command) {
     });
 }
 
-document.getElementById('reset').addEventListener('click', function() {
-    sendMessage('reset');
+document.getElementById('reset-relay').addEventListener('click', function() {
+    sendMessage('reset-relay');
+});
+
+document.getElementById('reset-device').addEventListener('click', function() {
+    sendMessage('reset-device');
+});
+
+document.getElementById('reset-all').addEventListener('click', function() {
+    sendMessage('reset-all');
 });
