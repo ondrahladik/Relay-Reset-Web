@@ -23,14 +23,16 @@ function sendMessage(command) {
     });
 }
 
-document.getElementById('reset-relay').addEventListener('click', function() {
-    sendMessage('reset-relay');
-});
+const buttons = [
+    'reset-relay',
+    'reset-device',
+    'reset-all',
+    'off-relay',
+    'on-relay'
+];
 
-document.getElementById('reset-device').addEventListener('click', function() {
-    sendMessage('reset-device');
-});
-
-document.getElementById('reset-all').addEventListener('click', function() {
-    sendMessage('reset-all');
+buttons.forEach(buttonId => {
+    document.getElementById(buttonId).addEventListener('click', function() {
+        sendMessage(buttonId);
+    });
 });

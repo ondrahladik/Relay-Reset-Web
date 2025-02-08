@@ -11,11 +11,11 @@ if ($topic && $message) {
     if ($mqtt->connect(true, null, $MQTT_USERNAME, $MQTT_PASSWORD)) {
         $mqtt->publish($topic, $message, 0);
         $mqtt->close();
-        echo json_encode(['status' => 'Příkaz proveden']);
+        echo json_encode(['status' => $RESPONSE_TEXT]);
     } else {
-        echo json_encode(['error' => 'Chyba na serveru']);
+        echo json_encode(['error' => $RESPONSE_ERROR]);
     }
 } else {
-    echo json_encode(['error' => 'Chyba na serveru']);
+    echo json_encode(['error' => $RESPONSE_ERROR]);
 }
 ?>
